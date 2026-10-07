@@ -9,7 +9,7 @@ const dishes=[
 const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
 let language='en',category='all',diet='all',query='',detailIndex=null,cart={};
 try {const saved=localStorage.getItem('beachhut-language');if(translations[saved])language=saved;const stored=JSON.parse(localStorage.getItem('beachhut-cart')||'{}');for(let i=0;i<dishes.length;i++)if(Number.isInteger(stored[i])&&stored[i]>0&&stored[i]<=99)cart[i]=stored[i];document.body.classList.toggle('dark',localStorage.getItem('beachhut-theme')==='dark');}catch{}
-function syncThemeColor(){document.querySelector('meta[name="theme-color"]').setAttribute('content',document.body.classList.contains('dark')?'#112c32':'#216b70');}
+function syncThemeColor(){document.querySelector('meta[name="theme-color"]').setAttribute('content',document.body.classList.contains('dark')?'#112c32':'#ECDEC5');}
 const t=key=>translations[language][key]||translations.en[key];
 const money=amount=>'Rs '+amount.toFixed(2);
 const text=i=>dishTranslations[language][i];
