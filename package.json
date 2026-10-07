@@ -1,0 +1,1 @@
+{"name":"beach-hut","version":"1.0.0","private":true,"scripts":{"start":"node server.js","build":"esbuild app.js --bundle --minify --outfile=app.bundle.js"},"dependencies":{"qrcode":"^1.5.4"},"devDependencies":{"esbuild":"^0.25.0"}}
